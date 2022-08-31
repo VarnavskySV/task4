@@ -41,4 +41,12 @@ public class Teacher {
     public void setSheetMarkList(List<SheetMark> sheetMarkList) {
         this.sheetMarkList = sheetMarkList;
     }
+
+    public Teacher() {
+    }
+
+    public Teacher(String name) {
+        this.name = name;
+    }
+
 }

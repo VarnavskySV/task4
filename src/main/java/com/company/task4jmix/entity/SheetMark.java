@@ -42,4 +42,15 @@ public class SheetMark {
         this.teacher = teacher;
     }
 
+    public SheetMark(){
+
+    }
+    public SheetMark(Integer id, Teacher teacher) {
+        this.id = id;
+        this.teacher = teacher;
+    }
+
+    public SheetMark(Integer id) {
+        this.id = id;
+    }
 }
