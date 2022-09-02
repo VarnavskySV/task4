@@ -20,6 +20,9 @@ repositories {
 }
 
 dependencies {
+
+    //compile group: 'org.springframework.data', name: 'spring-data-mongodb', version: '2.0.5.RELEASE'
+
     implementation 'io.jmix.core:jmix-core-starter'
     implementation 'io.jmix.data:jmix-eclipselink-starter'
     implementation 'io.jmix.ui:jmix-ui-starter'
@@ -34,6 +37,9 @@ dependencies {
     implementation 'io.jmix.datatools:jmix-datatools-ui-starter'
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    //implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    //implementation 'org.springframework.data:spring-data-jpa'
 
     runtimeOnly 'org.hsqldb:hsqldb'
 
