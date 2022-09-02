@@ -118,12 +118,12 @@ class Task4jmixApplicationTests {
 		sheetMark.setTeacher(teacher1);
 		sheetMarkRepository.save(sheetMark);
 		var fetchPlan = fetchPlans.builder(SheetMark.class)
-				.add("teacher", FetchPlan.LOCAL)
+				.add("teacher", FetchPlan.BASE)
 				.build();
 
 		var sheetMarks = sheetMarkRepository.getSheetMarkByTeacher(teacher1, fetchPlan);
 
-		Assertions.assertEquals(teacher1.getName(), sheetMarks.get(0).getTeacher(), "Teachers are empty");
+		Assertions.assertEquals(teacher1.getName(), sheetMarks.get(0).getTeacher().getName(), "Teachers are empty");
 
 	}
 
